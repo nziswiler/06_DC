@@ -11,8 +11,8 @@ services:
     ports:
       - "5432:5432"
   hf_db_frontend:
-    container_name: nziswiler/padm
-    image: dpage/pgadmin4
+    container_name: hf_padm
+    image: nziswiler/padm
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: nino.marco.ziswiler@iet-gibb.ch
