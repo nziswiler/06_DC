@@ -2,7 +2,7 @@ version: '3.8'
 services:
   hf_db_server:
     container_name: hf_psql
-    image: nziswiler/psql
+    image: nziswiler/psql:2
     restart: always
     environment:
       POSTGRES_USER: vmadmin
@@ -12,7 +12,7 @@ services:
       - "5432:5432"
   hf_db_frontend:
     container_name: hf_padm
-    image: nziswiler/padm
+    image: nziswiler/padm:2
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: nino.marco.ziswiler@iet-gibb.ch
